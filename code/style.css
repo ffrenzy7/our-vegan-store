@@ -1,0 +1,148 @@
+/* reset */
+
+* {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* variables */
+
+:root {
+  --headerHeight: 7.7rem;
+}
+
+/* main menu */
+
+.header {
+  align-items: center;
+  background-color: white;
+  display: flex;
+  height: var(--headerHeight);
+  justify-content: space-between;
+  left: 0;
+  padding: 0 2.8rem;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 9999;
+}
+
+.logo {
+  height: 4rem;
+  width: 4rem;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  height: 2rem;
+  justify-content: space-between;
+  width: 3rem;
+}
+
+.menu_line {
+  background-color: black;
+  height: 2px;
+  width: 100%;
+}
+
+/* main banner */
+
+.banner::before {
+  content: '';
+  background-color: white;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0.5;
+}
+
+.banner {
+  align-items: center;
+  background-image: url(./assets/vegetais.jpeg);
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  height: calc(100vh - var(--headerHeight));
+  margin-top: var(--headerHeight);
+  padding: 0 1.5rem;
+  position: relative;
+}
+
+.banner_text {
+  position: relative;
+}
+
+.banner_title {
+  /* font-family: 'Poppins', sans-serif;
+  font-size: 3rem;
+  font-weight: 600; */
+  font: 600 3rem 'Poppins', sans-serif;
+  letter-spacing: 0.2em;
+  margin-bottom: 4rem;
+  text-align: center;
+}
+
+.banner_subtitle {
+  /* font-family: 'Poppins', sans-serif;
+  /* line-height: 1.6; */
+  /* font-size: 1.4rem; */
+  font: 1.4rem/1.6 'Poppins', sans-serif;
+  letter-spacing: 0.5px;
+  text-align: center;
+}
+
+/* cards section */
+
+.card {
+  background-position: center;
+  background-size: cover;
+  color: white;
+  height: 45rem;
+  padding: 10rem 6rem;
+  text-align: center;
+}
+
+.card.alface {
+  background-image: url(./assets/alface.jpeg);
+}
+
+.card.pera {
+  background-image: url(./assets/pera.jpeg);
+}
+
+.card.pessego {
+  background-image: url(./assets/pessego.jpeg);
+}
+
+.card.limao {
+  background-image: url(./assets/limao.jpeg);
+}
+
+.cardTitle {
+  font: 600 2rem 'Poppins', sans-serif;
+  margin-bottom: 1.2rem;
+}
+
+.cardText {
+  font: 1.4rem/1.6 'Poppins', sans-serif;
+  letter-spacing: 0.5px;
+}
+
+.cardLink {
+  background: #333;
+  display: inline-block;
+  font: 600 1.4rem 'Poppins', sans-serif;
+  margin-top: 2rem;
+  padding: 1.4rem 4.2rem;
+  text-transform: uppercase;
+}
