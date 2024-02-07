@@ -129,20 +129,22 @@ a {
 }
 
 .cardTitle {
+  /* margin-bottom: 1.2rem; */
   font: 600 2rem 'Poppins', sans-serif;
-  margin-bottom: 1.2rem;
 }
 
 .cardText {
   font: 1.4rem/1.6 'Poppins', sans-serif;
   letter-spacing: 0.5px;
+  margin: 2rem 0 1.2rem;
 }
 
 .cardLink {
+  /* margin-top: 2rem; */
   background: #333;
+  border-radius: 0.4rem;
   display: inline-block;
   font: 600 1.4rem 'Poppins', sans-serif;
-  margin-top: 2rem;
   padding: 1.4rem 4.2rem;
   text-transform: uppercase;
 }
