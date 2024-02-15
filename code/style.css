@@ -2,14 +2,21 @@
 
 * {
   box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
   font-size: 62.5%;
   margin: 0;
   padding: 0;
 }
 
 a {
-  text-decoration: none;
   color: inherit;
+  font: inherit;
+  text-decoration: none;
+}
+
+button {
+  background: none;
+  border: none;
 }
 
 /* variables */
@@ -21,17 +28,21 @@ a {
 /* main menu */
 
 .header {
-  align-items: center;
   background-color: white;
-  display: flex;
   height: var(--headerHeight);
-  justify-content: space-between;
   left: 0;
   padding: 0 2.8rem;
   position: fixed;
   top: 0;
   width: 100%;
   z-index: 9999;
+}
+
+.header_navigation {
+  align-items: center;
+  display: flex;
+  height: 100%;
+  justify-content: space-between;
 }
 
 .logo {
@@ -45,6 +56,10 @@ a {
   height: 2rem;
   justify-content: space-between;
   width: 3rem;
+
+  @media screen and (min-width: 1200px) {
+    display: none;
+  }
 }
 
 .menu_line {
@@ -53,17 +68,26 @@ a {
   width: 100%;
 }
 
+.menu_desktop {
+  list-style: none;
+}
+
+.menu_desktop_item {
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
 /* main banner */
 
 .banner::before {
-  content: '';
   background-color: white;
+  content: '';
+  height: 100%;
+  left: 0;
+  opacity: 0.5;
   position: absolute;
   top: 0;
-  left: 0;
-  height: 100%;
   width: 100%;
-  opacity: 0.5;
 }
 
 .banner {
@@ -89,7 +113,8 @@ a {
 }
 
 .banner_title {
-  font: 600 3rem 'Poppins', sans-serif;
+  font-size: 3rem;
+  font-weight: 600;
   letter-spacing: 0.2em;
   margin-bottom: 4rem;
   text-align: center;
@@ -101,8 +126,9 @@ a {
 
 .banner_subtitle {
   color: #8b8b99;
-  font: 1.4rem/1.6 'Poppins', sans-serif;
+  font-size: 1.4rem;
   letter-spacing: 0.5px;
+  line-height: 1.6rem;
   text-align: center;
 }
 
@@ -134,12 +160,14 @@ a {
 }
 
 .cardTitle {
-  font: 600 2rem 'Poppins', sans-serif;
+  font-size: 2rem;
+  font-weight: 600;
 }
 
 .cardText {
-  font: 1.4rem/1.6 'Poppins', sans-serif;
+  font-size: 1.4rem;
   letter-spacing: 0.5px;
+  line-height: 1.6rem;
   margin: 2rem 0 1.2rem;
 }
 
@@ -147,7 +175,8 @@ a {
   background: #333;
   border-radius: 0.4rem;
   display: inline-block;
-  font: 600 1.4rem 'Poppins', sans-serif;
+  font-size: 1.4rem;
+  font-weight: 600;
   padding: 1.4rem 4.2rem;
   text-transform: uppercase;
 }
