@@ -76,9 +76,15 @@ button {
   list-style: none;
   padding: calc(var(--headerHeight) + 1.4rem) 4.5rem 0;
   position: fixed;
-  right: 0;
+  left: 100%;
   text-align: center;
   top: 0;
+  transition: transform 0.2s ease-out;
+  white-space: nowrap;
+}
+
+.menu_mobile.open {
+  transform: translateX(-100%);
 }
 
 .menu_desktop {
