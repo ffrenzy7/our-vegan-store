@@ -68,20 +68,42 @@ button {
   width: 100%;
 }
 
-.menu_desktop {
-  align-items: center;
+.menu_mobile {
+  background: white;
   cursor: pointer;
-  display: flex;
-  gap: 2.8rem;
-  height: 100%;
   list-style: none;
+  padding: 0 4.5rem;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  top: var(--headerHeight);
 }
 
-.menu_desktop_item {
+.menu_desktop {
+  @media screen and (min-width: 1200px) {
+    align-items: center;
+    background: initial;
+    display: flex;
+    gap: 2.8rem;
+    height: 100%;
+    padding: initial;
+    position: initial;
+    text-align: initial;
+  }
+}
+
+.menu_mobile_item {
   font-size: 1.4rem;
   font-weight: 600;
   letter-spacing: 0.5px;
+  margin: 1rem 1.4rem;
   transition: color 0.2s ease-in-out;
+}
+
+.menu_desktop_item {
+  @media screen and (min-width: 1200px) {
+    margin: initial;
+  }
 }
 
 .menu_desktop_item:hover,
