@@ -80,11 +80,18 @@ button {
   text-align: center;
   top: 0;
   transition: transform 0.2s ease-out;
-  white-space: nowrap;
+
+  /* @media screen and (min-width: 1200px) {
+    white-space: nowrap;
+  } */
 }
 
 .menu_mobile.open {
   transform: translateX(-100%);
+
+  @media screen and (min-width: 1200px) {
+    transform: initial;
+  }
 }
 
 .menu_desktop {
@@ -143,6 +150,8 @@ button {
 }
 
 .menu_desktop_button {
+  white-space: nowrap;
+
   @media screen and (min-width: 1200px) {
     font-size: 1.2rem;
     line-height: 1;
@@ -151,8 +160,10 @@ button {
 }
 
 .menu_desktop_button:hover {
-  color: #aad236;
-  background-color: transparent;
+  @media screen and (min-width: 1200px) {
+    color: #aad236;
+    background-color: transparent;
+  }
 }
 
 .menu_mobile_drop {
@@ -160,6 +171,11 @@ button {
   display: flex;
   justify-content: center;
   position: relative;
+  flex-direction: column;
+
+  @media screen and (min-width: 1200px) {
+    flex-direction: initial;
+  }
 }
 
 .menu_desktop_drop {
@@ -170,27 +186,51 @@ button {
 }
 
 .menu_desktop_drop:hover .menu_dropdown {
-  opacity: 1;
-  pointer-events: auto;
+  @media screen and (min-width: 1200px) {
+    opacity: 1;
+    pointer-events: auto;
+  }
+}
+
+.menu_drop_wrapper {
+  display: flex;
+  align-items: center;
 }
 
 .menu_dropdown {
-  background: white;
-  border-top: 2px solid #91ac41;
-  box-shadow: 0 4px 10px 1px rgba(0, 0, 0, 0.15);
-  left: -1rem;
+  display: none;
   list-style: none;
-  opacity: 0;
-  padding: 4rem;
-  pointer-events: none;
-  position: absolute;
-  top: 80%;
-  transition: opacity 0.2s ease-in-out;
-  white-space: nowrap;
+  position: static;
+  text-align: center;
+
+  @media screen and (min-width: 1200px) {
+    background: white;
+    border-top: 2px solid #91ac41;
+    box-shadow: 0 4px 10px 1px rgba(0, 0, 0, 0.15);
+    display: initial;
+    left: -1rem;
+    opacity: 0;
+    padding: 4rem;
+    pointer-events: none;
+    position: absolute;
+    text-align: initial;
+    top: 80%;
+    transition: opacity 0.2s ease-in-out;
+    white-space: nowrap;
+    width: initial;
+  }
+}
+
+.menu_dropdown.open {
+  display: initial;
 }
 
 .menu_dropdown_wrapper {
-  padding: 0.4rem 2.4rem;
+  padding: 0.4rem 0;
+
+  @media screen and (min-width: 1200px) {
+    padding: 0.4rem 2.4rem;
+  }
 }
 
 .menu_dropdown_wrapper:not(:first-child) {
@@ -198,10 +238,14 @@ button {
 }
 
 .menu_dropdown_item {
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   font-weight: 400;
-  letter-spacing: 0.5px;
   line-height: 2;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 1.4rem;
+    letter-spacing: 0.5px;
+  }
 }
 
 .menu_dropdown_item:hover {
