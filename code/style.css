@@ -331,6 +331,12 @@ button {
 
 /* cards section */
 
+.cards {
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
+}
+
 .card {
   background-position: center;
   background-size: cover;
@@ -338,6 +344,12 @@ button {
   height: 45rem;
   padding: 10rem 6rem;
   text-align: center;
+
+  @media screen and (min-width: 1200px) {
+    flex-basis: 25%;
+    height: auto;
+    text-align: left;
+  }
 }
 
 .card.alface {
@@ -359,13 +371,17 @@ button {
 .cardTitle {
   font-size: 2rem;
   font-weight: 600;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 2.4rem;
+  }
 }
 
 .cardText {
   font-size: 1.4rem;
   letter-spacing: 0.5px;
-  line-height: 1.6rem;
-  margin: 2rem 0 1.2rem;
+  line-height: 1.6;
+  margin: 2rem 0;
 }
 
 .cardLink {
