@@ -549,6 +549,10 @@ button {
   min-height: 100vh;
   padding: 4.8rem 1.5rem;
   position: relative;
+
+  @media screen and (min-width: 1200px) {
+    padding: 4.8rem 0;
+  }
 }
 
 .feature::before {
@@ -566,13 +570,34 @@ button {
   width: 100%;
 }
 
-.feature_content {
+.feature_wrapper {
   position: relative;
+
+  @media screen and (min-width: 1200px) {
+    align-items: center;
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 3rem;
+    margin: 0 auto;
+    max-width: 1140px;
+    padding: 0 1.5rem;
+  }
+}
+
+.feature_content {
+  @media screen and (min-width: 1200px) {
+    flex-basis: 40%;
+  }
 }
 
 .feature_title {
   font: 600 2rem/1.4 'Poppins', sans-serif;
   text-align: center;
+
+  @media screen and (min-width: 1200px) {
+    text-align: initial;
+    font: 600 2.4rem/1.2 'Poppins', sans-serif;
+  }
 }
 
 .feature_text {
@@ -584,8 +609,15 @@ button {
 
 .feature_image-wrapper {
   margin-top: 5.4rem;
+
+  @media screen and (min-width: 1200px) {
+    flex-basis: 60%;
+    margin-top: initial;
+  }
 }
 
 .feature_image {
+  height: 100%;
+  object-fit: cover;
   width: 100%;
 }
