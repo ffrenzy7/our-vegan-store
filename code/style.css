@@ -1,4 +1,4 @@
-/* reset */
+/* reset / global */
 
 * {
   box-sizing: border-box;
@@ -536,5 +536,56 @@ button {
 .fresh-food_image {
   height: 100%;
   object-fit: cover;
+  width: 100%;
+}
+
+/* feature section */
+
+.feature {
+  background-color: #f7f7f7;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 4.8rem 1.5rem;
+  position: relative;
+}
+
+.feature::before {
+  background: linear-gradient(
+    120deg,
+    #ffffff 40%,
+    rgba(0, 0, 0, 0) 40%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  content: '';
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.feature_content {
+  position: relative;
+}
+
+.feature_title {
+  font: 600 2rem/1.4 'Poppins', sans-serif;
+  text-align: center;
+}
+
+.feature_text {
+  color: #8b8b99;
+  font: 400 1.6rem/1.6 'Poppins', sans-serif;
+  letter-spacing: 0.5px;
+  margin-top: 1.6rem;
+}
+
+.feature_image-wrapper {
+  margin-top: 5.4rem;
+}
+
+.feature_image {
   width: 100%;
 }
