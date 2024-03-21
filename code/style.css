@@ -404,19 +404,46 @@ button {
 
 .fresh-food {
   padding: 7.1rem 1.5rem 4.5rem;
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 3rem;
+    margin: auto;
+    max-width: 1140px;
+    padding: 7.7rem 1.5rem;
+  }
+}
+
+.fresh-food_content-wrapper {
+  @media screen and (min-width: 1200px) {
+    flex-basis: 40%;
+  }
 }
 
 .fresh-food_intro {
   text-align: center;
+
+  @media screen and (min-width: 1200px) {
+    text-align: initial;
+  }
 }
 
 .fresh-food_intro-title {
   color: #91ac41;
   font: 2rem/1.35 'Caveat', cursive;
+
+  @media screen and (min-width: 1200px) {
+    font: 2.4rem/1.3 'Caveat', cursive;
+  }
 }
 
 .fresh-food_intro-subtitle {
   font: 600 2rem/1.35 'Poppins', sans-serif;
+
+  @media screen and (min-width: 1200px) {
+    font: 600 2.4rem/1.2 'Poppins', sans-serif;
+  }
 }
 
 .fresh-food_intro-text {
@@ -424,18 +451,37 @@ button {
   font: 400 1.4rem/1.4 'Poppins', sans-serif;
   letter-spacing: 0.5px;
   margin-top: 1.6rem;
+
+  @media screen and (min-width: 1200px) {
+    font: 400 1.2rem/1.6 'Poppins', sans-serif;
+  }
 }
 
 .fresh-food_list {
   margin-top: 5.4rem;
+
+  @media screen and (min-width: 1200px) {
+    padding: 0 1.5rem;
+  }
 }
 
 .fresh-food_list-item {
+  align-items: center;
   display: flex;
+
+  @media screen and (min-width: 1200px) {
+    cursor: pointer;
+  }
 }
 
 .fresh-food_list-item:not(:first-child) {
   margin-top: 3.2rem;
+}
+
+.fresh-food_list-item:hover .fresh-food_list-icon {
+  @media screen and (min-width: 1200px) {
+    transform: scale(1.1);
+  }
 }
 
 .fresh-food_list-icon {
@@ -447,6 +493,10 @@ button {
   height: 6rem;
   justify-content: center;
   width: 6rem;
+
+  @media screen and (min-width: 1200px) {
+    transition: transform 0.2s ease-out;
+  }
 }
 
 .material-icons {
@@ -467,12 +517,24 @@ button {
   font: 400 1.4rem/1.4 'Poppins', sans-serif;
   letter-spacing: 0.5px;
   margin-top: 0.8rem;
+
+  @media screen and (min-width: 1200px) {
+    font: 400 1.2rem/1.6 'Poppins', sans-serif;
+  }
 }
 
 .fresh-food_image-wrapper {
   margin-top: 3.2rem;
+
+  @media screen and (min-width: 1200px) {
+    flex-basis: 60%;
+    height: 51.8rem;
+    margin-top: initial;
+  }
 }
 
 .fresh-food_image {
+  height: 100%;
+  object-fit: cover;
   width: 100%;
 }
