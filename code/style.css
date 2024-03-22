@@ -393,8 +393,8 @@ ul {
   font-weight: 600;
   padding: 1.4rem 4.2rem;
   text-transform: uppercase;
-  transition-property: background-color, color;
   transition: 0.2s ease-out;
+  transition-property: background-color, color;
 }
 
 .cardLink:hover {
@@ -752,4 +752,74 @@ ul {
 
 .fa-brands {
   font-size: 1.2rem;
+}
+
+/* order section */
+
+.order {
+  background-image: url(./assets/background8.jpg);
+  background-position: center;
+  background-size: cover;
+  padding: 6rem 0 6.6rem;
+  position: relative;
+}
+
+.order::before {
+  background-color: black;
+  content: '';
+  height: 100%;
+  left: 0;
+  opacity: 0.4;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.order_container {
+  margin: 0 auto;
+  max-width: 1140px;
+  padding: 0 11rem;
+  position: relative;
+}
+
+.order_title {
+  color: white;
+  font: 600 4.4rem/1.2 'Poppins', sans-serif;
+}
+
+.order-links {
+  display: flex;
+  font: 600 1.2rem/1 'Poppins', sans-serif;
+  gap: 2.6rem;
+  margin-top: 4.6rem;
+}
+
+.order-links_first {
+  background-color: white;
+  border-radius: 0.4rem;
+  border: 1px solid white;
+  color: #333333;
+  padding: 1.4rem 2.3rem;
+  transition: 0.3s ease-out;
+  transition-property: background-color, color;
+}
+
+.order-links_first:hover {
+  background-color: transparent;
+  color: white;
+}
+
+.order-links_second {
+  background-color: #f69dad;
+  border-radius: 0.4rem;
+  border: 1px solid #f69dad;
+  color: white;
+  padding: 1.4rem 2.3rem;
+  transition: 0.3s ease-out;
+  transition-property: background-color, color;
+}
+
+.order-links_second:hover {
+  background-color: transparent;
+  color: #f69dad;
 }
