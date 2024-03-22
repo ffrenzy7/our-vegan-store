@@ -776,22 +776,35 @@ ul {
 }
 
 .order_container {
-  margin: 0 auto;
-  max-width: 1140px;
-  padding: 0 11rem;
+  padding: 0 4rem;
   position: relative;
+
+  @media screen and (min-width: 1200px) {
+    margin: 0 auto;
+    max-width: 1140px;
+    padding: 0 11rem;
+  }
 }
 
 .order_title {
   color: white;
-  font: 600 4.4rem/1.2 'Poppins', sans-serif;
+  font: 600 2.9rem/1.37 'Poppins', sans-serif;
+
+  @media screen and (min-width: 1200px) {
+    font: 600 4.4rem/1.2 'Poppins', sans-serif;
+  }
 }
 
 .order-links {
   display: flex;
-  font: 600 1.2rem/1 'Poppins', sans-serif;
+  font: 600 1.4rem/1.4 'Poppins', sans-serif;
   gap: 2.6rem;
-  margin-top: 4.6rem;
+  margin-top: 2.2rem;
+
+  @media screen and (min-width: 1200px) {
+    font: 600 1.2rem/1 'Poppins', sans-serif;
+    margin-top: 4.6rem;
+  }
 }
 
 .order-links_first {
@@ -799,14 +812,21 @@ ul {
   border-radius: 0.4rem;
   border: 1px solid white;
   color: #333333;
+  margin-left: 1.3rem;
   padding: 1.4rem 2.3rem;
-  transition: 0.3s ease-out;
-  transition-property: background-color, color;
+
+  @media screen and (min-width: 1200px) {
+    margin-left: initial;
+    transition: 0.3s ease-out;
+    transition-property: background-color, color;
+  }
 }
 
 .order-links_first:hover {
-  background-color: transparent;
-  color: white;
+  @media screen and (min-width: 1200px) {
+    background-color: transparent;
+    color: white;
+  }
 }
 
 .order-links_second {
@@ -814,12 +834,19 @@ ul {
   border-radius: 0.4rem;
   border: 1px solid #f69dad;
   color: white;
+  margin-right: 1.3rem;
   padding: 1.4rem 2.3rem;
-  transition: 0.3s ease-out;
-  transition-property: background-color, color;
+
+  @media screen and (min-width: 1200px) {
+    margin-right: initial;
+    transition: 0.3s ease-out;
+    transition-property: background-color, color;
+  }
 }
 
 .order-links_second:hover {
-  background-color: transparent;
-  color: #f69dad;
+  @media screen and (min-width: 1200px) {
+    background-color: transparent;
+    color: #f69dad;
+  }
 }
