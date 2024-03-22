@@ -633,29 +633,75 @@ ul {
   color: white;
   padding: 10.1rem 1.5rem 12.7rem;
   text-align: center;
+
+  @media screen and (min-width: 1200px) {
+    padding: 10.7rem 0;
+  }
+}
+
+.team_container {
+  @media screen and (min-width: 1200px) {
+    margin: 0 auto;
+    max-width: 1140px;
+    padding: 0 1.5rem;
+  }
 }
 
 .team_title {
   color: #91ac41;
   font: 2rem/1.35 'Caveat', cursive;
+
+  @media screen and (min-width: 1200px) {
+    font: 2.4rem/1.3 'Caveat', cursive;
+  }
 }
 
 .team_subtitle {
   font: 600 2.9rem/1.38 'Poppins', sans-serif;
+
+  @media screen and (min-width: 1200px) {
+    font: 600 4.4rem/1.2 'Poppins', sans-serif;
+  }
 }
 
 .team_text {
   font: 500 1.6rem/1.6 'Poppins', sans-serif;
   letter-spacing: 0.5px;
   margin-top: 1.6rem;
+
+  @media screen and (min-width: 1200px) {
+    margin: 1.6rem 19.5rem;
+  }
 }
 
 .team-list {
   margin-top: 5.4rem;
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
+}
+
+.team-list_person {
+  @media screen and (min-width: 1200px) {
+    flex-basis: 25%;
+    padding: 0 1.5rem;
+  }
 }
 
 .team-list_person:not(:first-child) {
   margin-top: 5.2rem;
+
+  @media screen and (min-width: 1200px) {
+    margin-top: initial;
+  }
+}
+
+.team-list_person:hover .team-list_person-pic {
+  @media screen and (min-width: 1200px) {
+    transform: scale(1.2);
+    transition: transform 0.2s ease-out;
+  }
 }
 
 .team-list_person-pic_wrapper {
@@ -670,6 +716,10 @@ ul {
   height: 100%;
   object-fit: cover;
   width: 100%;
+
+  @media screen and (min-width: 1200px) {
+    transition: transform 0.2s ease-out;
+  }
 }
 
 .team-list_person-name {
