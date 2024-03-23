@@ -23,6 +23,10 @@ ul {
   list-style: none;
 }
 
+input {
+  border: none;
+}
+
 /* variables */
 
 :root {
@@ -849,4 +853,50 @@ ul {
     background-color: transparent;
     color: #f69dad;
   }
+}
+
+/* subscribe section */
+
+.subscribe {
+  background-color: #f7eee2;
+  padding: 9rem 1.5rem 9.5rem;
+}
+
+.subscribe_container {
+}
+
+.subscribe-intro {
+  text-align: center;
+}
+
+.subscribe-intro_title {
+  color: #91ac41;
+  font: 2rem/1.35 'Caveat', cursive;
+}
+
+.subscribe-intro_subtitle {
+  font: 600 2.9rem/1.38 'Poppins', sans-serif;
+  margin-top: 0.8rem;
+}
+
+.subscribe-form {
+  margin-top: 2.5rem;
+}
+
+#subscribe-form_email {
+  border-radius: 0.4rem;
+  font: 1.4rem/1.5 'Poppins', sans-serif;
+  padding: 1.1rem;
+  width: 100%;
+}
+
+.subscribe-form_button {
+  background-color: #aad236;
+  border: 1px solid #aad236;
+  color: white;
+  display: block;
+  font: 600 1.4rem 'Poppins', sans-serif;
+  margin: 1rem auto 0;
+  padding: 1rem 4.2rem;
+  text-transform: uppercase;
 }
