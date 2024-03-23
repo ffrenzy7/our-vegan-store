@@ -143,6 +143,7 @@ input {
 
 .menu_desktop_item {
   @media screen and (min-width: 1200px) {
+    cursor: pointer;
     display: initial;
     margin: initial;
     transition: color 0.2s ease-in-out;
@@ -206,6 +207,7 @@ input {
 
 .menu_desktop_drop {
   @media screen and (min-width: 1200px) {
+    cursor: pointer;
     height: 100%;
     margin: initial;
   }
@@ -233,6 +235,7 @@ input {
     background: white;
     border-top: 2px solid #91ac41;
     box-shadow: 0 4px 10px 1px rgba(0, 0, 0, 0.15);
+    cursor: initial;
     display: initial;
     left: -1rem;
     opacity: 0;
