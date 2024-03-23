@@ -398,8 +398,12 @@ input {
   font-weight: 600;
   padding: 1.4rem 4.2rem;
   text-transform: uppercase;
-  transition: 0.2s ease-out;
-  transition-property: background-color, color;
+
+  @media screen and (min-width: 1200px) {
+    cursor: pointer;
+    transition: 0.2s ease-out;
+    transition-property: background-color, color;
+  }
 }
 
 .cardLink:hover {
@@ -821,6 +825,7 @@ input {
   padding: 1.4rem 2.3rem;
 
   @media screen and (min-width: 1200px) {
+    cursor: pointer;
     margin-left: initial;
     transition: 0.3s ease-out;
     transition-property: background-color, color;
@@ -843,6 +848,7 @@ input {
   padding: 1.4rem 2.3rem;
 
   @media screen and (min-width: 1200px) {
+    cursor: pointer;
     margin-right: initial;
     transition: 0.3s ease-out;
     transition-property: background-color, color;
@@ -972,18 +978,49 @@ input {
 
 .footer_container {
   padding: 0 1.5rem;
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    gap: 3rem;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 1140px;
+  }
+}
+
+.footer_section1,
+.footer_section4 {
+  @media screen and (min-width: 1200px) {
+    flex-basis: 33%;
+  }
+}
+
+.footer_section2,
+.footer_section3 {
+  @media screen and (min-width: 1200px) {
+    flex-basis: 16%;
+  }
 }
 
 .footer_section2,
 .footer_section3,
 .footer_section4 {
   margin-top: 3.5rem;
+
+  @media screen and (min-width: 1200px) {
+    margin-top: initial;
+  }
 }
 
 .footer_title {
   color: white;
   font: 600 1.6rem/1 'Poppins', sans-serif;
+  letter-spacing: normal;
   margin-bottom: 1.9rem;
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 4rem;
+  }
 }
 
 .footer_list {
@@ -999,6 +1036,12 @@ input {
   margin-top: 1rem;
 }
 
+.footer_list > li:hover .footer_icon {
+  @media screen and (min-width: 1200px) {
+    transform: scale(1.2);
+  }
+}
+
 .footer_icon {
   align-items: center;
   background-color: white;
@@ -1008,6 +1051,10 @@ input {
   justify-content: center;
   margin-right: 1rem;
   width: 3.2rem;
+
+  @media screen and (min-width: 1200px) {
+    transition: transform 0.2s ease-out;
+  }
 }
 
 .footer_icon > i {
@@ -1018,6 +1065,21 @@ input {
 .footer_subtitle {
   color: white;
   font: 1.6rem/1.7 'Poppins', sans-serif;
+}
+
+.footer_link {
+  @media screen and (min-width: 1200px) {
+    cursor: pointer;
+    transition: 0.2s ease-out;
+    transition-property: color, transform;
+  }
+}
+
+.footer_link:hover {
+  @media screen and (min-width: 1200px) {
+    color: white;
+    transform: translateX(0.5rem);
+  }
 }
 
 .footer_map {
