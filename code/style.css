@@ -102,7 +102,6 @@ input {
 
 .menu_mobile {
   background: white;
-  cursor: pointer;
   height: 100vh;
   list-style: none;
   padding: calc(var(--headerHeight) + 1.4rem) 4.5rem 0;
@@ -256,6 +255,7 @@ input {
   padding: 0.4rem 0;
 
   @media screen and (min-width: 1200px) {
+    cursor: pointer;
     padding: 0.4rem 2.4rem;
   }
 }
@@ -272,11 +272,14 @@ input {
   @media screen and (min-width: 1200px) {
     font-size: 1.4rem;
     letter-spacing: 0.5px;
+    transition: color 0.3s ease-out;
   }
 }
 
 .menu_dropdown_item:hover {
-  color: #4d4d4d;
+  @media screen and (min-width: 1200px) {
+    color: #4d4d4d;
+  }
 }
 
 /* main banner */
