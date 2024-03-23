@@ -25,6 +25,7 @@ ul {
 
 input {
   border: none;
+  outline: none;
 }
 
 /* variables */
@@ -859,44 +860,99 @@ input {
 
 .subscribe {
   background-color: #f7eee2;
-  padding: 9rem 1.5rem 9.5rem;
+  padding: 9rem 0 9.5rem;
+
+  @media screen and (min-width: 1200px) {
+    padding: 9rem 0;
+  }
 }
 
 .subscribe_container {
+  padding: 0 1.5rem;
+
+  @media screen and (min-width: 1200px) {
+    align-items: center;
+    display: flex;
+    gap: 3rem;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 1140px;
+  }
 }
 
 .subscribe-intro {
   text-align: center;
+
+  @media screen and (min-width: 1200px) {
+    flex-basis: 40%;
+    text-align: initial;
+    margin-bottom: 1.6rem;
+  }
 }
 
 .subscribe-intro_title {
   color: #91ac41;
   font: 2rem/1.35 'Caveat', cursive;
+
+  @media screen and (min-width: 1200px) {
+    font: 2.4rem/1.3 'Caveat', cursive;
+  }
 }
 
 .subscribe-intro_subtitle {
   font: 600 2.9rem/1.38 'Poppins', sans-serif;
   margin-top: 0.8rem;
+
+  @media screen and (min-width: 1200px) {
+    font: 600 4.4rem/1.2 'Poppins', sans-serif;
+  }
 }
 
 .subscribe-form {
   margin-top: 2.5rem;
+  display: flex;
+  flex-direction: column;
+
+  @media screen and (min-width: 1200px) {
+    align-items: center;
+    flex-basis: 60%;
+    flex-direction: initial;
+    gap: 2.5rem;
+    margin-top: initial;
+  }
 }
 
 #subscribe-form_email {
   border-radius: 0.4rem;
   font: 1.4rem/1.5 'Poppins', sans-serif;
   padding: 1.1rem;
-  width: 100%;
+
+  @media screen and (min-width: 1200px) {
+    width: 42.3rem;
+  }
 }
 
 .subscribe-form_button {
   background-color: #aad236;
+  border-radius: 0.4rem;
   border: 1px solid #aad236;
   color: white;
-  display: block;
+  cursor: pointer;
   font: 600 1.4rem 'Poppins', sans-serif;
   margin: 1rem auto 0;
   padding: 1rem 4.2rem;
   text-transform: uppercase;
+
+  @media screen and (min-width: 1200px) {
+    margin: initial;
+    transition: 0.2s ease-out;
+    transition-property: background-color, color;
+  }
+}
+
+.subscribe-form_button:hover {
+  @media screen and (min-width: 1200px) {
+    background-color: transparent;
+    color: #aad236;
+  }
 }
