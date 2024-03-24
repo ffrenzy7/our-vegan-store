@@ -1,18 +1,18 @@
-const menu = document.querySelector('.menu')
-const menuMobile = document.querySelector('.menu_mobile')
-const menuMobileDrop = document.querySelector('.menu_mobile_drop')
-const menuDropdown = document.querySelector('.menu_dropdown')
-const overlay = document.querySelector('.overlay')
+const burgerButton = document.querySelector('.header__burger')
+const menu = document.querySelector('.header__menu')
+const itemDropdown = document.querySelector('.header__item-dropdown')
+const submenu = document.querySelector('.header__submenu')
+const overlay = document.querySelector('.header__overlay')
 
-menu.addEventListener('click', openMenu)
+burgerButton.addEventListener('click', openMenu)
 overlay.addEventListener('click', openMenu)
-menuMobileDrop.addEventListener('click', dropDown)
+itemDropdown.addEventListener('click', dropDown)
 
 function openMenu() {
-  menuMobile.classList.toggle('open')
-  overlay.classList.toggle('visible')
+  menu.classList.toggle('header__menu--open')
+  overlay.classList.toggle('header__overlay--visible')
 }
 
 function dropDown() {
-  menuDropdown.classList.toggle('open')
+  submenu.classList.toggle('header__submenu--open')
 }
